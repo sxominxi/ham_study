@@ -1,7 +1,7 @@
 # 최대수 구하기
 
-import sys
-sys.stdin = open('input.txt')
+# import sys
+# sys.stdin = open('input.txt')
 
 t = int(input())
 
@@ -14,5 +14,4 @@ for i in range(1, t+1):
             max_num = j
         else:
             continue
-
-    print(f'#{i} {max_num}')
+print(f'#{i} {max_num}')

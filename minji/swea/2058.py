@@ -10,3 +10,4 @@ for num in N:
     i += int(num)
 print(i)
 
+# list, sum 함수 사용
