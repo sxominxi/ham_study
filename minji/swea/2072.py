@@ -10,16 +10,12 @@ for i in range(1, T + 1):
 # [22, 8, 5, 123, 7, 2, 63, 7, 3, 46]
 # [6, 63, 2, 3, 58, 76, 21, 33, 8, 1]
 
+    c = 0
+
 # 리스트 안에 있는 num 중 홀수만 빼서 리스트 만들기
     for num in a:
         if num % 2 == 1:
-            b = [num]
-
-    print(b)
-
-n = 0
-for nums in b:
-    n += num
-
-print(f'#{i} {n}')
+            c += num # 자꾸 홀수 하나만 빼니까 홀수인 수들 다 더해주기
+            c_list = c
+    print(f'#{i} {c_list}')
 
