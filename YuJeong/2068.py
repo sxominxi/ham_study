@@ -11,7 +11,8 @@ for i in range(1, t+1):
     max_num = nums[0]
     for j in nums:
         if max_num < j:
-            j = max_num
+            max_num = j
         else:
             continue
-    print(f'#{i} {j}')
+
+    print(f'#{i} {max_num}')
