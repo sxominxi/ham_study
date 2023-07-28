@@ -11,15 +11,15 @@ for _ in range(N):
 
 AB =[[0]*M for i in range(N)]
 
-for i in range(N):
-    a_element =list(map(int, input().split()))
-    A.append(a_element)
+# for i in range(N):
+#     a_element =list(map(int, input().split()))
+#     A.append(a_element)
 
-for j in range(N):
-    b_element =list(map(int, input().split()))
-    B.append(b_element)
+# for j in range(N):
+#     b_element =list(map(int, input().split()))
+#     B.append(b_element)
 
-AB = []
+# AB = []
 
 for i in range(N):
   for j in range(M):
