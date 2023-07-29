@@ -2,14 +2,12 @@
 N, M = map(int, input().split())
 
 A = []
-for _ in range(N):
-    A.append(list(map(int, input().split())))
+# for _ in range(N):
+    # A.append(list(map(int, input().split())))
 
 B = []
-for _ in range(N):
-    B.append(list(map(int, input().split())))
-
-AB =[[0]*M for i in range(N)]
+# for _ in range(N):
+    # B.append(list(map(int, input().split()))) 얘네 없앤거는 입력을 동일한 코드를 두번이나 받아서 입력을 더 받으려고 해서 값이 없어서 오류가 났다.
 
 # for i in range(N):
 #     a_element =list(map(int, input().split()))
@@ -19,7 +17,13 @@ AB =[[0]*M for i in range(N)]
 #     b_element =list(map(int, input().split()))
 #     B.append(b_element)
 
+<<<<<<< HEAD
 # AB = []
+=======
+
+AB = [[0]*M for i in range(N)]
+# AB = [] 이걸 쓰면은 애써 초기화해서 빈자리 둔 AB가 재정의 돼서 도루묵이 됐다, 하필이면 빈 리스트로
+>>>>>>> 77bbf28721abd290ff96e51d010993fb8ab8f01a
 
 for i in range(N):
   for j in range(M):
