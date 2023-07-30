@@ -17,13 +17,10 @@ B = []
 #     b_element =list(map(int, input().split()))
 #     B.append(b_element)
 
-<<<<<<< HEAD
 # AB = []
-=======
 
 AB = [[0]*M for i in range(N)]
 # AB = [] 이걸 쓰면은 애써 초기화해서 빈자리 둔 AB가 재정의 돼서 도루묵이 됐다, 하필이면 빈 리스트로
->>>>>>> 77bbf28721abd290ff96e51d010993fb8ab8f01a
 
 for i in range(N):
   for j in range(M):
