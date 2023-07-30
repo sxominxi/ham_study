@@ -16,12 +16,11 @@ if __name__ == '__main__':
 
 # 2
 def under_60(scores):
-    i = 0   
     count = 0   # 초기값 0
-    if 60 > scores[i]:
-        i += 1  # 인덱스 하나씩 올리면서 찾기
-        count += 1
-        return count
+    for i in scores:
+        if 60 > count:
+            count += 1
+    return count
     # 여기에 코드를 작성합니다.
 
 
