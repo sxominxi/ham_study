@@ -5,16 +5,45 @@
 def get_row_col_maxsum(matrix):
     pass
     # 여기에 코드를 작성하여 함수를 완성합니다.
-    sum_list1 = []
-    for row in matrix:
-        sum_col = 0
-        for col in row:
-            sum_col += col
-        sum_list1.append(sum_col)
-    print(sum_list1)
-            
+    cnt_c = 0
+    for _ in matrix:
+        cnt_c +=1
+    cnt_r = 0
+    for _ in matrix[0]:
+        cnt_r += 1
+    
+    sum_list_r = []
+    for i in range(cnt_c):
+        sum_r = 0
+        for j in range(cnt_r):
+            sum_r += matrix[i][j]
+        sum_list_r.append(sum_r)
+    
+    sum_list_c = []
+    for i in range(cnt_r):
+        sum_c = 0
+        for j in range(cnt_c):
+            sum_c += matrix[j][i]
+        sum_list_c.append(sum_c)
+        
+    max_r = sum_list_r[0]
+    for i in sum_list_r:
+        if max_r < i:
+            max_r = i
+
+    max_c = sum_list_c[0]
+    for i in sum_list_c:
+        if max_c < i:
+            max_c = i        
+
+
+    if max_r < max_c:
+        return ('col', max_c)
+    else:
+        return ('row', max_r)
     
 
+            
     
 
 
